@@ -14,11 +14,15 @@
       <h1>Precious Calculator</h1>
     </header>
     <main>
+      <section id="screen">
+        <!-- <h2 id="output-message"></h2> -->
+        <input type="text" id="output-message" />
+      </section>
       <section id="calculator" class="calculator-container">
         <!-- ROW 1 -->
         <button id="operation" onclick="numberClear()">C</button>
         <button id="operation" onclick="division()">/</button>
-        <button id="operation" onclick="multiply()">*</button>
+        <button id="operation" onclick="multiply()">X</button>
         <button id="operation" onclick="numberDelete()">D</button>
 
         <!-- ROW 2 -->
@@ -43,10 +47,6 @@
         <button onclick="percentage()">%</button>
         <button onclick="zero()">0</button>
         <button onclick="dot()">.</button>
-      </section>
-      <section id="screen">
-        <!-- <h2 id="output-message"></h2> -->
-        <input type="text" id="output-message" readonly />
       </section>
     </main>
 

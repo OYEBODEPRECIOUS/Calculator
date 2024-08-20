@@ -36,7 +36,7 @@ function six() {
   console.log("six");
 }
 function seven() {
-  outputMessage.textContent += "7";
+  outputMessage.value += "7";
   console.log("seven");
 }
 
