@@ -1,0 +1,55 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Precious Calculator</h1>
+    </header>
+    <main>
+      <section id="calculator" class="calculator-container">
+        <!-- ROW 1 -->
+        <button id="operation" onclick="numberClear()">C</button>
+        <button id="operation" onclick="division()">/</button>
+        <button id="operation" onclick="multiply()">*</button>
+        <button id="operation" onclick="numberDelete()">D</button>
+
+        <!-- ROW 2 -->
+        <button id="7" onclick="seven()">7</button>
+        <button onclick="eight()">8</button>
+        <button onclick="nine()">9</button>
+        <button id="operation" onclick="minus()">-</button>
+
+        <!-- ROW 3 -->
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+        <button onclick="six()">6</button>
+        <button id="operation" onclick="plus()">+</button>
+
+        <!-- ROW 4 -->
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button type="submit" id="equal-to" onclick="equal()">=</button>
+
+        <!-- ROW 5 -->
+        <button onclick="percentage()">%</button>
+        <button onclick="zero()">0</button>
+        <button onclick="dot()">.</button>
+      </section>
+      <section id="screen">
+        <!-- <h2 id="output-message"></h2> -->
+        <input type="text" id="output-message" readonly />
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
